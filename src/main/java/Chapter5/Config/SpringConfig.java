@@ -15,6 +15,7 @@ import Chapter5.Impl.Facade.Facade;
 import Chapter5.Impl.Bridge.Aeroplane;
 import Chapter5.Impl.Bridge.HighCapacity;
 import Chapter5.Impl.Decorator.ColourAeroplane;
+import Chapter5.Impl.Template.TemplateAeroplane;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -90,5 +91,10 @@ public class SpringConfig {
     public ColourAeroplane getDecorated()
     {
         return new ColourAeroplane();
+    }
+    @Bean(name="TemplateBean")
+    public TemplateAeroplane getTemplate()
+    {
+        return new TemplateAeroplane();
     }
 }
