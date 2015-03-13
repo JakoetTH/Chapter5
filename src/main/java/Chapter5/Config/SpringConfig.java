@@ -21,6 +21,7 @@ import Chapter5.Impl.Observer.ObserverAeroplane;
 import Chapter5.Impl.Strategy.HikePrice;
 import Chapter5.Impl.Command.FlyCommand;
 import Chapter5.Impl.Command.Fly;
+import Chapter5.Impl.State.DamagedAeroplane;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -121,5 +122,10 @@ public class SpringConfig {
     public FlyCommand getFlyCommand()
     {
         return new FlyCommand(new Fly());
+    }
+    @Bean(name="StateBean")
+    public DamagedAeroplane getState()
+    {
+        return new DamagedAeroplane();
     }
 }
