@@ -17,6 +17,7 @@ import Chapter5.Impl.Bridge.HighCapacity;
 import Chapter5.Impl.Decorator.ColourAeroplane;
 import Chapter5.Impl.Template.TemplateAeroplane;
 import Chapter5.Impl.Mediator.Mediator;
+import Chapter5.Impl.Observer.ObserverAeroplane;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -102,5 +103,10 @@ public class SpringConfig {
     public Mediator getMediator()
     {
         return new Mediator();
+    }
+    @Bean(name="ObserverBean")
+    public ObserverAeroplane getObserver()
+    {
+        return new ObserverAeroplane();
     }
 }
