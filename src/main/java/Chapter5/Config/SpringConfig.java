@@ -11,6 +11,7 @@ import Chapter5.Impl.ChainOfResponsibility.GradeAHandler;
 import Chapter5.Impl.Composite.Hangar;
 import Chapter5.Impl.Proxy.EarlyFlight;
 import Chapter5.Impl.Flyweight.FlyweightFactory;
+import Chapter5.Impl.Facade.Facade;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -71,5 +72,10 @@ public class SpringConfig {
     public FlyweightFactory getFlyweight()
     {
         return FlyweightFactory.getInstance();
+    }
+    @Bean(name="FacadeBean")
+    public Facade getFacade()
+    {
+        return new Facade();
     }
 }
