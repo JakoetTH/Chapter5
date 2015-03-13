@@ -14,6 +14,7 @@ import Chapter5.Impl.Flyweight.FlyweightFactory;
 import Chapter5.Impl.Facade.Facade;
 import Chapter5.Impl.Bridge.Aeroplane;
 import Chapter5.Impl.Bridge.HighCapacity;
+import Chapter5.Impl.Decorator.ColourAeroplane;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -84,5 +85,10 @@ public class SpringConfig {
     public Aeroplane getBridge()
     {
         return new Aeroplane(new HighCapacity());
+    }
+    @Bean(name="DecorateBean")
+    public ColourAeroplane getDecorated()
+    {
+        return new ColourAeroplane();
     }
 }
