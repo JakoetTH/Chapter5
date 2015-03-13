@@ -1,11 +1,9 @@
 package Chapter5;
 
 import Chapter5.Config.SpringConfig;
-import Chapter5.Impl.EmployeeFactory;
-import Chapter5.Impl.TempEmployeeFactory;
-import Chapter5.Impl.Factory;
-import Chapter5.Impl.AbstractFactory;
-import Chapter5.Impl.Employee;
+import Chapter5.Impl.Factories.Factory;
+import Chapter5.Impl.Factories.AbstractFactory;
+import Chapter5.Impl.Factories.Employee;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
@@ -28,7 +26,7 @@ public class AbstractFactoryTest {
     @Test
     public void testAbstractFactory()
     {
-        Assert.assertEquals("I am a Freelancer",freelancer.role());
+        Assert.assertEquals("I am a Freelancer", freelancer.role());
     }
     @After
     public void tearDown()

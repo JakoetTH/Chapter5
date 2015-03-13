@@ -1,10 +1,8 @@
 package Chapter5;
 
 import Chapter5.Config.SpringConfig;
-import Chapter5.Impl.SecondYearDiplomaCourseBuilder;
-import Chapter5.Impl.DiplomaCourse;
-import Chapter5.Impl.DiplomaCourseBuilder;
-import Chapter5.Impl.DiplomaCourseDirector;
+import Chapter5.Impl.Buildtool.SecondYearDiplomaCourseBuilder;
+import Chapter5.Impl.Buildtool.DiplomaCourse;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

@@ -1,4 +1,4 @@
-package Chapter5.Impl;
+package Chapter5.Impl.Factories;
 
 /**
  * Created by student on 2015/03/13.

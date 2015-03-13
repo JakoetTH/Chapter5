@@ -1,22 +1,22 @@
-package Chapter5.Impl;
+package Chapter5.Impl.Buildtool;
 
 /**
  * Created by student on 2015/03/13.
  */
-public class SecondYearDiplomaCourseBuilder implements DiplomaCourseBuilder {
+public class ThirdYearDiplomaCourseBuilder implements DiplomaCourseBuilder {
     private DiplomaCourse diplomaCourse;
-    public SecondYearDiplomaCourseBuilder() {
+    public ThirdYearDiplomaCourseBuilder() {
         diplomaCourse = new DiplomaCourse();
     }
     @Override
     public void buildTechnicalPrograming()
     {
-        diplomaCourse.setTechnicalPrograming("Technical Programing 1");
+        diplomaCourse.setTechnicalPrograming("TechnicalPrograming 2");
     }
     @Override
     public void buildInformationSystems()
     {
-        diplomaCourse.setInformationSystems("Information Systems 2");
+        diplomaCourse.setInformationSystems("Information Systems 3");
     }
     @Override
     public DiplomaCourse getDiplomaCourse()

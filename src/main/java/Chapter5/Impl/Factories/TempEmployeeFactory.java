@@ -1,9 +1,9 @@
-package Chapter5.Impl;
+package Chapter5.Impl.Factories;
 
 /**
  * Created by student on 2015/03/13.
  */
-public class TempEmployeeFactory implements Factory{
+public class TempEmployeeFactory implements Factory {
     private static TempEmployeeFactory tempEmployeeFactory = null;
 
     private TempEmployeeFactory() {

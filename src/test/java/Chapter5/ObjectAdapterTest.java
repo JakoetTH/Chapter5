@@ -2,8 +2,8 @@ package Chapter5;
 
 
 import Chapter5.Config.SpringConfig;
-import Chapter5.Impl.SocketObjectAdapter;
-import Chapter5.Impl.Voltage;
+import Chapter5.Impl.Adapter.SocketObjectAdapter;
+import Chapter5.Impl.Adapter.Voltage;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

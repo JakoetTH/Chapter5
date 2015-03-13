@@ -1,4 +1,4 @@
-package Chapter5.Impl;
+package Chapter5.Impl.Prototype;
 
 public interface CloneObject {
     public CloneObject makeCopy();

@@ -1,12 +1,12 @@
 package Chapter5.Config;
 
-import Chapter5.Impl.PrototypeAeroplane;
-import Chapter5.Impl.Singleton;
-import Chapter5.Impl.EmployeeFactory;
-import Chapter5.Impl.AbstractFactory;
-import Chapter5.Impl.SecondYearDiplomaCourseBuilder;
-import Chapter5.Impl.SocketClassAdapter;
-import Chapter5.Impl.SocketObjectAdapter;
+import Chapter5.Impl.Prototype.PrototypeAeroplane;
+import Chapter5.Impl.Singleton.Singleton;
+import Chapter5.Impl.Factories.EmployeeFactory;
+import Chapter5.Impl.Factories.AbstractFactory;
+import Chapter5.Impl.Buildtool.SecondYearDiplomaCourseBuilder;
+import Chapter5.Impl.Adapter.SocketClassAdapter;
+import Chapter5.Impl.Adapter.SocketObjectAdapter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 

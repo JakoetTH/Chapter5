@@ -1,8 +1,8 @@
 package Chapter5;
 
 import Chapter5.Config.SpringConfig;
-import Chapter5.Impl.EmployeeFactory;
-import Chapter5.Impl.Employee;
+import Chapter5.Impl.Factories.EmployeeFactory;
+import Chapter5.Impl.Factories.Employee;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;

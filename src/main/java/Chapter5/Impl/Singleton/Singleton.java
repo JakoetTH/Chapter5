@@ -1,4 +1,4 @@
-package Chapter5.Impl;
+package Chapter5.Impl.Singleton;
 
 
 public class Singleton {

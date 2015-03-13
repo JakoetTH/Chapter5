@@ -1,7 +1,7 @@
 package Chapter5;
 import Chapter5.Config.SpringConfig;
-import Chapter5.Impl.PrototypeAeroplane;
-import Chapter5.Impl.CloneObject;
+import Chapter5.Impl.Prototype.PrototypeAeroplane;
+import Chapter5.Impl.Prototype.CloneObject;
 import org.junit.After;
 import org.junit.Assert;
 import org.junit.Before;
