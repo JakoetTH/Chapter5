@@ -12,6 +12,8 @@ import Chapter5.Impl.Composite.Hangar;
 import Chapter5.Impl.Proxy.EarlyFlight;
 import Chapter5.Impl.Flyweight.FlyweightFactory;
 import Chapter5.Impl.Facade.Facade;
+import Chapter5.Impl.Bridge.Aeroplane;
+import Chapter5.Impl.Bridge.HighCapacity;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -77,5 +79,10 @@ public class SpringConfig {
     public Facade getFacade()
     {
         return new Facade();
+    }
+    @Bean(name="BridgeBean")
+    public Aeroplane getBridge()
+    {
+        return new Aeroplane(new HighCapacity());
     }
 }
