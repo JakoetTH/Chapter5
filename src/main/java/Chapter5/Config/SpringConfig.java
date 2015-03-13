@@ -7,6 +7,7 @@ import Chapter5.Impl.Factories.AbstractFactory;
 import Chapter5.Impl.Buildtool.SecondYearDiplomaCourseBuilder;
 import Chapter5.Impl.Adapter.SocketClassAdapter;
 import Chapter5.Impl.Adapter.SocketObjectAdapter;
+import Chapter5.Impl.ChainOfResponsibility.GradeAHandler;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -47,5 +48,10 @@ public class SpringConfig {
     public SocketObjectAdapter getObjectAdapter()
     {
         return new SocketObjectAdapter();
+    }
+    @Bean(name="GradeHandlerBean")
+    public GradeAHandler getGradeHandler()
+    {
+        return new GradeAHandler();
     }
 }
