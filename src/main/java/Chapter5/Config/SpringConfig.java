@@ -18,6 +18,7 @@ import Chapter5.Impl.Decorator.ColourAeroplane;
 import Chapter5.Impl.Template.TemplateAeroplane;
 import Chapter5.Impl.Mediator.Mediator;
 import Chapter5.Impl.Observer.ObserverAeroplane;
+import Chapter5.Impl.Strategy.HikePrice;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -108,5 +109,10 @@ public class SpringConfig {
     public ObserverAeroplane getObserver()
     {
         return new ObserverAeroplane();
+    }
+    @Bean(name="StrategyBean")
+    public HikePrice getPrice()
+    {
+        return new HikePrice();
     }
 }
