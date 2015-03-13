@@ -8,6 +8,7 @@ import Chapter5.Impl.Buildtool.SecondYearDiplomaCourseBuilder;
 import Chapter5.Impl.Adapter.SocketClassAdapter;
 import Chapter5.Impl.Adapter.SocketObjectAdapter;
 import Chapter5.Impl.ChainOfResponsibility.GradeAHandler;
+import Chapter5.Impl.Composite.Hangar;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -53,5 +54,10 @@ public class SpringConfig {
     public GradeAHandler getGradeHandler()
     {
         return new GradeAHandler();
+    }
+    @Bean(name="CompositeBean")
+    public Hangar getHangar()
+    {
+        return new Hangar();
     }
 }
