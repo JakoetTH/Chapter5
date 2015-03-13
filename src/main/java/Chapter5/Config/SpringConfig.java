@@ -1,5 +1,6 @@
 package Chapter5.Config;
 
+import Chapter5.Impl.Aeroplane;
 import Chapter5.Impl.Singleton;
 import Chapter5.Impl.EmployeeFactory;
 import Chapter5.Impl.AbstractFactory;
@@ -29,5 +30,10 @@ public class SpringConfig {
     public SecondYearDiplomaCourseBuilder getSecondYearCourse()
     {
         return new SecondYearDiplomaCourseBuilder();
+    }
+    @Bean(name="PrototypeBean")
+    public Aeroplane getAeroplane()
+    {
+        return new Aeroplane("This is an Aeroplane");
     }
 }
