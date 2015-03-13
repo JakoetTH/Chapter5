@@ -9,6 +9,7 @@ import Chapter5.Impl.Adapter.SocketClassAdapter;
 import Chapter5.Impl.Adapter.SocketObjectAdapter;
 import Chapter5.Impl.ChainOfResponsibility.GradeAHandler;
 import Chapter5.Impl.Composite.Hangar;
+import Chapter5.Impl.Proxy.EarlyFlight;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -59,5 +60,10 @@ public class SpringConfig {
     public Hangar getHangar()
     {
         return new Hangar();
+    }
+    @Bean(name="ProxyBean")
+    public EarlyFlight getFlight()
+    {
+        return new EarlyFlight();
     }
 }
