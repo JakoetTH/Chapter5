@@ -19,6 +19,8 @@ import Chapter5.Impl.Template.TemplateAeroplane;
 import Chapter5.Impl.Mediator.Mediator;
 import Chapter5.Impl.Observer.ObserverAeroplane;
 import Chapter5.Impl.Strategy.HikePrice;
+import Chapter5.Impl.Command.FlyCommand;
+import Chapter5.Impl.Command.Fly;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -114,5 +116,10 @@ public class SpringConfig {
     public HikePrice getPrice()
     {
         return new HikePrice();
+    }
+    @Bean(name="CommandBean")
+    public FlyCommand getFlyCommand()
+    {
+        return new FlyCommand(new Fly());
     }
 }
