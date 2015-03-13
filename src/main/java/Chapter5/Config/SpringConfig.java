@@ -1,10 +1,12 @@
 package Chapter5.Config;
 
-import Chapter5.Impl.Aeroplane;
+import Chapter5.Impl.PrototypeAeroplane;
 import Chapter5.Impl.Singleton;
 import Chapter5.Impl.EmployeeFactory;
 import Chapter5.Impl.AbstractFactory;
 import Chapter5.Impl.SecondYearDiplomaCourseBuilder;
+import Chapter5.Impl.SocketClassAdapter;
+import Chapter5.Impl.SocketObjectAdapter;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -32,8 +34,18 @@ public class SpringConfig {
         return new SecondYearDiplomaCourseBuilder();
     }
     @Bean(name="PrototypeBean")
-    public Aeroplane getAeroplane()
+    public PrototypeAeroplane getAeroplane()
     {
-        return new Aeroplane("This is an Aeroplane");
+        return new PrototypeAeroplane("This is an Aeroplane");
+    }
+    @Bean(name="ClassAdapterBean")
+    public SocketClassAdapter getClassAdapter()
+    {
+        return new SocketClassAdapter();
+    }
+    @Bean(name="ObjectAdapterBean")
+    public SocketObjectAdapter getObjectAdapter()
+    {
+        return new SocketObjectAdapter();
     }
 }
