@@ -23,6 +23,7 @@ import Chapter5.Impl.Command.FlyCommand;
 import Chapter5.Impl.Command.Fly;
 import Chapter5.Impl.State.DamagedAeroplane;
 import Chapter5.Impl.Visitor.VisitorAeroplane;
+import Chapter5.Impl.Memento.MementoAeroplane;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;
 
@@ -134,4 +135,10 @@ public class SpringConfig {
     {
         return new VisitorAeroplane();
     }
+    @Bean(name="MementoBean")
+    public MementoAeroplane getMemento()
+    {
+        return MementoAeroplane.getInstance();
+    }
+
 }
